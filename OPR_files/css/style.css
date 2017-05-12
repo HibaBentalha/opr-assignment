@@ -253,7 +253,9 @@ ul {
 .general-rating {
     float: left;
 }
-
+.specific-rating{
+    width: 70%;
+}
 .rating {
     /*overflow: hidden;*/
     /*display: inline-block;*/

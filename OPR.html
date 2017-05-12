@@ -22,7 +22,7 @@
     <!-- Bootstrap core CSS -->
     <link href="./OPR_files/css/bootstrap.min.css" rel="stylesheet">
     <link href="./OPR_files/css/style.css" rel="stylesheet">
-
+    <link href="./OPR_files/css/treeview.css" rel="stylesheet">
 </head>
 
 <body>
@@ -177,7 +177,7 @@
                         <div class="col-md-8">
                             <h3>Hotel name</h3>
                             <h4>General rating</h4>
-                            <div class="fieldWrapper general-rating">
+                            <div class="general-rating">
 
                                 <input class="rating-input" id="category_0_0" name="category_0" type="radio" value="5">
                                 <label for="category_0_0" class="rating-star">5</label>
@@ -201,6 +201,7 @@
 
 
                     </div>
+
                     <div class="row">
                         <div class="col-md-4">
                             <label for="id_Title">Title</label>
@@ -209,6 +210,7 @@
                             <textarea rows="1" id="id_Title" name="Title"></textarea>
                         </div>
                     </div>
+ 
                     <div class="row">
                         <div class="col-md-4">
                             <label for="id_Review">Review</label>
@@ -217,6 +219,7 @@
                             <textarea rows="5" id="id_Review" name="Review"></textarea>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-md-4">
                             <label for="id_When">When</label>
@@ -238,19 +241,17 @@
                             <label for="id_Type">Type</label>
                         </div>
                         <div class="col-md-8">
-                            <input type="radio" value="Business" id="id_Type" class="myinput">Business
-                            <input type="radio" value="Family" id="id_Type" class="myinput">Family
-                            <input type="radio" value="Friends" id="id_Type" class="myinput">Friends
+                            <input type="radio" value="Business" id="id_Type">Business
+                            <input type="radio" value="Family" id="id_Type">Family
+                            <input type="radio" value="Friends" id="id_Type">Friends
                         </div>
                     </div>
 
                     <br>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="fieldWrapper rating">
-
-                                <h4>Environmental</h4>
-
+                    <div class="row specific-rating">
+                        <ul class="treeview">
+                            <li>
+                                <a href="#">Environmental</a>
                                 <input class="rating-input" id="category_1_0" name="category_1" type="radio" value="5">
                                 <label for="category_1_0" class="rating-star">5</label>
 
@@ -265,93 +266,62 @@
 
                                 <input class="rating-input" id="category_1_4" name="category_1" type="radio" value="1">
                                 <label for="category_1_4" class="rating-star">1</label>
+                                <ul>
+                                    <li>
+                                        Energy
+                                        <input class="rating-input" id="category_11_0" name="category_11" type="radio" value="5">
+                                        <label for="category_11_0" class="rating-star">5</label>
 
-                            </div>
-                        </div>
+                                        <input class="rating-input" id="category_11_1" name="category_11" type="radio" value="4">
+                                        <label for="category_11_1" class="rating-star">4</label>
 
-                        <br>
+                                        <input class="rating-input" id="category_11_2" name="category_11" type="radio" value="3">
+                                        <label for="category_11_2" class="rating-star">3</label>
 
-                        <form id="myform">
-                            <div class="col-md-8">
-                                <div class="fieldWrapper rating">
+                                        <input class="rating-input" id="category_11_3" name="category_11" type="radio" value="2">
+                                        <label for="category_11_3" class="rating-star">2</label>
 
-                                    <h4>Energy</h4>
+                                        <input class="rating-input" id="category_11_4" name="category_11" type="radio" value="1">
+                                        <label for="category_11_4" class="rating-star">1</label>
+                                    </li>
+                                    <li>
+                                        Water
+                                        <input class="rating-input" id="category_12_0" name="category_12" type="radio" value="5">
+                                        <label for="category_12_0" class="rating-star">5</label>
 
-                                    <input class="rating-input" id="category11_0" name="category_11" type="radio" value="5">
-                                    <label for="category11_0" class="rating-star">5</label>
+                                        <input class="rating-input" id="category_12_1" name="category_12" type="radio" value="4">
+                                        <label for="category_12_1" class="rating-star">4</label>
 
-                                    <input class="rating-input" id="category11_1" name="category_11" type="radio" value="4">
-                                    <label for="category11_1" class="rating-star">4</label>
+                                        <input class="rating-input" id="category_12_2" name="category_12" type="radio" value="3">
+                                        <label for="category_12_2" class="rating-star">3</label>
 
-                                    <input class="rating-input" id="category11_2" name="category_11" type="radio" value="3">
-                                    <label for="category11_2" class="rating-star">3</label>
+                                        <input class="rating-input" id="category_12_3" name="category_12" type="radio" value="2">
+                                        <label for="category_12_3" class="rating-star">2</label>
 
-                                    <input class="rating-input" id="category11_3" name="category_11" type="radio" value="2">
-                                    <label for="category11_3" class="rating-star">2</label>
+                                        <input class="rating-input" id="category_12_4" name="category_12" type="radio" value="1">
+                                        <label for="category_12_4" class="rating-star">1</label>
+                                    </li>
+                                    <li>
+                                        Waste
+                                        <input class="rating-input" id="category_13_0" name="category_13" type="radio" value="5">
+                                        <label for="category_13_0" class="rating-star">5</label>
 
-                                    <input class="rating-input" id="category11_4" name="category_11" type="radio" value="1">
-                                    <label for="category11_4" class="rating-star">1</label>
+                                        <input class="rating-input" id="category_13_1" name="category_13" type="radio" value="4">
+                                        <label for="category_13_1" class="rating-star">4</label>
 
-                                </div>
-                            </div>
+                                        <input class="rating-input" id="category_13_2" name="category_13" type="radio" value="3">
+                                        <label for="category_13_2" class="rating-star">3</label>
 
+                                        <input class="rating-input" id="category_13_3" name="category_13" type="radio" value="2">
+                                        <label for="category_13_3" class="rating-star">2</label>
 
-                            <br>
-                            <div class="col-md-8">
-                                <div class="fieldWrapper rating">
-
-                                    <h4>Water</h4>
-
-                                    <input class="rating-input" id="category12_0" name="category_12" type="radio" value="5">
-                                    <label for="category12_0" class="rating-star">5</label>
-
-                                    <input class="rating-input" id="category12_1" name="category_12" type="radio" value="4">
-                                    <label for="category12_1" class="rating-star">4</label>
-
-                                    <input class="rating-input" id="category12_2" name="category_12" type="radio" value="3">
-                                    <label for="category12_2" class="rating-star">3</label>
-
-                                    <input class="rating-input" id="category12_3" name="category_12" type="radio" value="2">
-                                    <label for="category12_3" class="rating-star">2</label>
-
-                                    <input class="rating-input" id="category12_4" name="category_12" type="radio" value="1">
-                                    <label for="category12_4" class="rating-star">1</label>
-
-                                </div>
-                            </div>
-
-
-                            <br>
-                            <div class="col-md-8">
-                                <div class="fieldWrapper rating">
-
-                                    <h4>Waste</h4>
-
-                                    <input class="rating-input" id="category13_0" name="category_13" type="radio" value="5">
-                                    <label for="category13_0" class="rating-star">5</label>
-
-                                    <input class="rating-input" id="category13_1" name="category_13" type="radio" value="4">
-                                    <label for="category13_1" class="rating-star">4</label>
-
-                                    <input class="rating-input" id="category13_2" name="category_13" type="radio" value="3">
-                                    <label for="category13_2" class="rating-star">3</label>
-
-                                    <input class="rating-input" id="category13_3" name="category_13" type="radio" value="2">
-                                    <label for="category13_3" class="rating-star">2</label>
-
-                                    <input class="rating-input" id="category13_4" name="category_13" type="radio" value="1">
-                                    <label for="category13_4" class="rating-star">1</label>
-
-                                </div>
-                            </div>
-                        <br>
-
-
-                        <div class="col-md-8">
-                            <div class="fieldWrapper rating">
-
-                                <h4>Social</h4>
-
+                                        <input class="rating-input" id="category_13_4" name="category_13" type="radio" value="1">
+                                        <label for="category_13_4" class="rating-star">1</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Cultural</a>
                                 <input class="rating-input" id="category_2_0" name="category_2" type="radio" value="5">
                                 <label for="category_2_0" class="rating-star">5</label>
 
@@ -366,19 +336,17 @@
 
                                 <input class="rating-input" id="category_2_4" name="category_2" type="radio" value="1">
                                 <label for="category_2_4" class="rating-star">1</label>
-
-                            </div>
-                        </div>
-
-
-                        <br>
-
-
-                        <div class="col-md-8">
-                            <div class="fieldWrapper rating">
-
-                                <h4>Cultural</h4>
-
+                                <ul>
+                                    <li>
+                                        *****
+                                    </li>
+                                    <li>
+                                        *****
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Social</a>
                                 <input class="rating-input" id="category_3_0" name="category_3" type="radio" value="5">
                                 <label for="category_3_0" class="rating-star">5</label>
 
@@ -393,21 +361,27 @@
 
                                 <input class="rating-input" id="category_3_4" name="category_3" type="radio" value="1">
                                 <label for="category_3_4" class="rating-star">1</label>
+                                 <ul>
+                                    <li>
+                                        *****
+                                    </li>
+                                    <li>
+                                        *****
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
 
-                            </div>
-                        </div>
-                    </form>
-                    <br>
-                    <br>
                     <br>
                     <div class="col-md-5">
                         <input type="submit" value="Submit" class="btn btn-info">
                     </div>
                 </form>
             </div>
-            </div>
         </div>
     </div>
+
 
 
     <!-- Bootstrap core JavaScript
@@ -415,6 +389,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./OPR_files/js/jquery.min.js"></script>
     <script src="./OPR_files/js/bootstrap.min.js"></script>
+    <script src="./OPR_files/js/treeview.js"></script>
 
     <div class="pac-container pac-logo" style="display: none; width: 768px; position: absolute; left: 428px; top: 135px;"></div>
 </body>
