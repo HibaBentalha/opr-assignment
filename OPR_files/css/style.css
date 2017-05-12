@@ -253,9 +253,7 @@ ul {
 .general-rating {
     float: left;
 }
-.specific-rating{
-    width: 70%;
-}
+
 .rating {
     /*overflow: hidden;*/
     /*display: inline-block;*/
@@ -337,19 +335,9 @@ ul {
 .smaller-image {
     width: 110px !important;
 }
-.mylabel{
-    float:left;
-    text-align: left;
-    width: 150px;
-    margin-top: 15px;
-    padding-right: 20px;
-
+.specific-rating{
+    width: 70%;
 }
-.mytextarea, .myinput{
-   margin-top: 15px;
-}
-
-#myform{
-    background-color: #CCC;
-    border-left-width: 50px;
+.specific{
+    margin-left: 33%;
 }
