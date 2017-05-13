@@ -16,10 +16,10 @@
 .magic-radio + label,
 .magic-checkbox + label {
   position: relative;
-  display: block;
   padding-left: 30px;
   cursor: pointer;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-right: 1.2em; }
   .magic-radio + label:hover:before,
   .magic-checkbox + label:hover:before {
     animation-duration: 0.4s;
