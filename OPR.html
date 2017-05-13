@@ -24,6 +24,7 @@
     <link href="./OPR_files/css/style.css" rel="stylesheet">
     <link href="./OPR_files/css/treeview.css" rel="stylesheet">
     <link href="./OPR_files/css/magic-check.css" rel="stylesheet">
+    <link href="./OPR_files/css/datepicker.css" rel="stylesheet">
 
 </head>
 
@@ -206,7 +207,7 @@
                             <textarea rows="1" id="id_Title" name="Title"></textarea>
                         </div>
                     </div>
- 
+
                     <div class="row">
                         <div class="col-md-4">
                             <label for="id_Review">Review</label>
@@ -222,13 +223,10 @@
                         </div>
                         <div class="col-md-8">
                             <div class="input-group">
-                                <select name="When" id="selector">
-                                    <option selected="">January 2017</option>
-                                    <option>February 2017</option>
-                                    <option>March 2017</option>
-                                    <option>April 2017</option>
-                                    <option>Mai 2017</option>               
-                                </select>
+                                <div class="input-append date" id="datepicker" data-date="01-01-2017" data-date-format="dd-mm-yyyy">
+                                    <input class="span2" size="16" type="text">
+                                    <span class="add-on"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -361,7 +359,7 @@
 
                                 <input class="rating-input" id="category_3_4" name="category_3" type="radio" value="1">
                                 <label for="category_3_4" class="rating-star">1</label>
-                                 <ul>
+                                <ul>
                                     <li>
                                         *****
                                     </li>
@@ -390,6 +388,7 @@
     <script src="./OPR_files/js/jquery.min.js"></script>
     <script src="./OPR_files/js/bootstrap.min.js"></script>
     <script src="./OPR_files/js/treeview.js"></script>
+    <script src="./OPR_files/js/bootstrap-datepicker.js"></script>
 
     <div class="pac-container pac-logo" style="display: none; width: 768px; position: absolute; left: 428px; top: 135px;"></div>
 </body>
